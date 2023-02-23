@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Credit Application Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<h1>Credit Application Form</h1>
+
+
+<form th:action="@{/credit-application}" method="post">
+    <label for="identityNumber">Identity Number:</label>
+    <input type="text" id="identityNumber" name="identityNumber" required />
+
+    <label for="nameSurname">Name Surname:</label>
+    <input type="text" id="nameSurname" name="nameSurname" required />
+
+    <label for="monthlyIncome">Monthly Income:</label>
+    <input type="number" id="monthlyIncome" name="monthlyIncome" required />
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" required />
+
+    <label for="birthDate">Birth Date:</label>
+    <input type="date" id="birthDate" name="birthDate" required />
+
+    <label for="collateralAmount">Collateral Amount:</label>
+    <input type="number" id="collateralAmount" name="collateralAmount" />
+
+    <label for="creditScore">Credit Score:</label>
+    <input type="number" id="creditScore" name="creditScore" />
+
+    <button type="submit">Apply for Credit</button>
+</form>
+</body>
+</html>

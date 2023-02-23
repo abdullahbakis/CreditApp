@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Credit Application Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<h1>Credit Application Details</h1>
+
+<div th:if="${creditApplication}">
+    <p>ID: <span th:text="${creditApplication.id}"></span></p>
+    <p>Identity Number: <span th:text="${creditApplication.identityNumber}"></span></p>
+    <p>Name Surname: <span th:text="${creditApplication.nameSurname}"></span></p>
+    <p>Monthly Income: <span th:text="${creditApplication.monthlyIncome}"></span></p>
+    <p>Phone Number: <span th:text="${creditApplication.phoneNumber}"></span></p>
+    <p>Birth Date: <span th:text="${#temporals.format(creditApplication.birthDate, 'dd/MM/yyyy')}"></span></p>
+    <p>Collateral Amount: <span th:text="${creditApplication.collateralAmount}"></span></p>
+    <p>Credit Score: <span th:text="${creditApplication.creditScore}"></span></p>
+    <p>Credit Result: <span th:text="${creditApplication.creditResult}"></span></p>
+    <p>Credit Limit: <span th:text="${creditApplication.creditLimit}"></span></p>
+</div>
+
+</body>
+</html>

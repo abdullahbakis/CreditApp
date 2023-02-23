@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Credit Application Result</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<h1>Credit Application Result</h1>
+
+<div th:if="${creditResult == 'APPROVED'}">
+    <p>ID: <span th:text="${id}"></span></p>
+    <p>Identity Number: <span th:text="${identityNumber}"></span></p>
+    <p>Name Surname: <span th:text="${nameSurname}"></span></p>
+    <p>Monthly Income: <span th:text="${monthlyIncome}"></span></p>
+    <p>Phone Number: <span th:text="${phoneNumber}"></span></p>
+    <p>Birth Date: <span th:text="${birthDate}"></span></p>
+    <p>Credit Result: <span th:text="${creditResult}"></span></p>
+    <p>Congratulations, your credit application has been approved!</p>
+    <p>Credit Limit: <span th:text="${creditLimit}"></span></p>
+
+    <form action="/credit-application" method="get">
+        <button type="submit">New Application</button>
+    </form>
+
+    <form action="/search-credit-application" method="get">
+        <button type="submit">Search Application</button>
+    </form>
+
+</div>
+
+<div th:if="${creditResult == 'REJECTED'}">
+    <p>Sorry, your credit application has been rejected.</p>
+</div>
+
+</body>
+</html>

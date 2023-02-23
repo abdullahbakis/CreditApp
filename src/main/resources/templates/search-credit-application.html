@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Credit Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+    <script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+<h1>Search Credit Application</h1>
+
+<form th:action="@{/search-credit-application}" method="post" th:object="${creditApplication}">
+    <label for="identityNumber">Identity Number:</label>
+    <input type="text" id="identityNumber" name="identityNumber" required />
+
+    <label for="birthDate">Birth Date:</label>
+    <input type="date" id="birthDate" name="birthDate" required />
+
+    <button type="submit">Search</button>
+</form>
+
+<div th:if="${errorMessage}" class="error-message">
+    <p th:text="${errorMessage}"></p>
+</div>
+
+</body>
+</html>
