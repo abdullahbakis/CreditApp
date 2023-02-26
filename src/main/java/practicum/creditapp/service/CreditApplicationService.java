@@ -86,15 +86,5 @@ public class CreditApplicationService {
         }
     }
 
-    /**
-     * This method retrieves the credit application with the given ID using a CreditApplicationRepository.
-     * @param id the ID of the credit application to retrieve
-     * @return the credit application with the given ID
-     * @throws RuntimeException if the credit application with the given ID is not found in the database
-     */
-    public CreditApplication getCreditApplicationById(Long id) {
-        return creditApplicationRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Credit application not found"));
-    }
 }
 
