@@ -50,4 +50,4 @@ Bootstrap - The CSS framework used
 Abdullah Bakis - [abdullahbakis](https://github.com/abdullahbakis)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](tps://github.com/abdullahbakis/CreditApp/blob/master/licence) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/abdullahbakis/CreditApp/blob/master/licence) file for details.
