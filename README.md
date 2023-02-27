@@ -37,7 +37,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-The application should now be up and running on (http://localhost:8080/credit-application)[http://localhost:8080/credit-application]
+The application should now be up and running on [http://localhost:8080/credit-application](http://localhost:8080/credit-application)
 
 
 ## Built With
@@ -47,7 +47,7 @@ Thymeleaf - The template engine used
 Bootstrap - The CSS framework used
 
 ## Authors
-Abdullah Bakis - (abdullahbakis)[https://github.com/abdullahbakis]
+Abdullah Bakis - [abdullahbakis](https://github.com/abdullahbakis)
 
 ## License
-This project is licensed under the MIT License - see the (LICENSE.md)[https://github.com/abdullahbakis/CreditApp/blob/master/licence] file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](tps://github.com/abdullahbakis/CreditApp/blob/master/licence) file for details.
