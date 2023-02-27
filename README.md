@@ -41,10 +41,10 @@ The application should now be up and running on [http://localhost:8080/credit-ap
 
 
 ## Built With
-Spring Boot - The web framework used
-Maven - Dependency management
-Thymeleaf - The template engine used
-Bootstrap - The CSS framework used
+* Spring Boot - The web framework used
+* Maven - Dependency management
+* Thymeleaf - The template engine used
+* Bootstrap - The CSS framework used
 
 ## Authors
 Abdullah Bakis - [abdullahbakis](https://github.com/abdullahbakis)
